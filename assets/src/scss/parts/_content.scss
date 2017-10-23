@@ -1,0 +1,75 @@
+.content{
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1024);
+  }
+  &__left{
+    @include flex-grid-column(3);
+    position: relative;
+  }
+  &__left-block1{
+    background-color: $d-gray-color;
+    width: rem-calc(200);
+    height: rem-calc(400);
+  }
+  &__left-block1-text{
+    padding: rem-calc(10);
+    margin-top: 0;
+    color: white;
+  }
+  &__left-block1-item{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  &__left-block2{
+    position: absolute;
+    bottom: 0;
+    width: rem-calc(200);
+    height: rem-calc(200);
+  }
+  &__image{
+    height: 100%;
+  }
+  &__center{
+    @include flex-grid-column(9);
+  }
+  &__center-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__center-block1{
+    background-color: $w-gray-color;
+    width: 100%;
+    height: rem-calc(300);
+  }
+  &__center-img{
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__center-item{
+    margin-right: rem-calc(20);
+    margin-bottom: rem-calc(20);
+  }
+  &__center-block2{
+    background-color: $w-gray-color;
+    width: 45%;
+    height: rem-calc(300);
+    margin-right: 10%;
+  }
+  &__center-block3{
+    background-color: $w-gray-color;
+    width: 45%;
+    height: rem-calc(300);
+  }
+  &__center-text{
+    padding: rem-calc(10);
+    margin-top: 0;
+  }
+}

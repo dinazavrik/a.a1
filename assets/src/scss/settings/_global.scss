@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: rem-calc(14);
+  line-height: rem-calc(22);
+}
+
+html {
+  font-size: 100%;
+  @include breakpoint(xs) {
+    font-size: 75%;
+  }
+}

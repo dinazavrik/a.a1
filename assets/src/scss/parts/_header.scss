@@ -1,0 +1,33 @@
+.header{
+  padding-top: rem-calc(50);
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1024);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: rem-calc(20);
+  }
+  &__img{
+    width: rem-calc(150);
+    height: rem-calc(150);
+    margin-right: rem-calc(20);
+  }
+  &__image{
+    height: 100%;
+  }
+  &__block1{
+    background-color: $d-gray-color;
+    width: rem-calc(300);
+    height: rem-calc(150);
+    margin-right: rem-calc(20);
+  }
+  &__block2{
+    background-color: $d-gray-color;
+    width: rem-calc(600);
+    height: rem-calc(150);
+  }
+  &__line{
+    width: 100%;
+  }
+}
